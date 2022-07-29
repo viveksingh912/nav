@@ -1,0 +1,49 @@
+body{
+    background-color: aquamarine;
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 70%;
+}
+form input{
+    width: 30%;
+    background: none;
+    border-radius: 15px;
+    padding: 5px 14px;
+    margin: 10px 0px;
+}
+form textarea{
+    width: 30%;
+    background: none;
+    border-radius: 15px;
+    padding: 5px 14px;
+    margin: 10px 0px;
+}
+form button{
+    margin-top: 3vh;
+    width: 6%;
+    padding: 9px 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-weight: 700;
+    font-style: italic;
+}
+button span{
+    position: absolute;
+    top: 75.3%;
+    z-index: 10;
+    width: 6%;
+    opacity: 0;
+    height: 3px;
+    right: 43.5%;
+    background: linear-gradient(90deg,transparent,red);
+}
+button:hover span{
+    right: 47.5%;
+    transition: 1s;
+    opacity: 1;
+
+}
