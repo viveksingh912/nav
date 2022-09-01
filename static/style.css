@@ -7,7 +7,7 @@
 .burger{
     position: absolute;
     z-index: 4;
-    top: 30px;
+    top: 19px;
     right: 4vw;
     visibility: hidden;
 }
@@ -100,7 +100,7 @@ button:hover{
 }
 .home button{
     margin-top: 10px;
-    padding: 5px 12px;
+    padding: 0.5vh 0.5vw;
     background-color: rgb(244, 8, 90);
     text-transform: uppercase;
     color: white;
@@ -119,6 +119,21 @@ button:hover{
     animation-iteration-count: 1;
     animation-duration: 3s;
 }
+.line1{
+    background-color: black;
+    height: 3px;
+    z-index: 10;
+    width: 222px;
+    margin: auto;
+}
+.line2{
+    background-color: black;
+    height: 3px;
+    z-index: 10;
+    width: 12px;
+    margin: auto;
+
+}
 @keyframes vivek {
     from{
         top: 0;
@@ -133,7 +148,7 @@ button:hover{
 }
 #Winter h1{
     text-align: center;
-    font-size: 3em;
+    font-size: 2em;
     margin: 10px;
 }
 .img div a{
@@ -143,24 +158,33 @@ button:hover{
     text-align: center;
     font-size: 1.3em;
 }
-#content{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 200px;
-    color: white;
-    background-color: black;
-}
-#content div{
-    width: 17%;
-}
+
+
 .content a{
     display: block;
     margin: 4px;
 }
+.foot{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 200px;
+    color: white;
+    background-color: grey;
+}
+.foot div{
+    min-width: 230px;
+    margin: 1vh 0;
+}
 #footer div{
     text-align: center;
     font-size: 1.2em;
+}
+.social{
+    background-color: grey;
+    display: flex;
+    justify-content: center;
 }
 @media only screen and ( max-width:910px) {
     #navbar ul{
@@ -174,7 +198,7 @@ button:hover{
         width: 43vw;
         background-color: rgb(23, 22, 22);
         color: white;
-        transition: all 1s ease-out;
+        transition: all 0.7s ease-out;
         z-index: 5;
     }
     .search{
@@ -195,15 +219,17 @@ button:hover{
     .Winter{
         flex-wrap: wrap;
     }
-    #content{
+    .foot{
         flex-wrap: wrap;
+        justify-content: space-between;
+        height: auto;
     }
     #navbar ul li a{
         padding: 25px 5px;
     }
     .visible{
         opacity: 0;
-        width: 0vw;
+        transform: translateX(-43vw);
     }
 }
 

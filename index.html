@@ -5,6 +5,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <!--fontawesome-->
+     <script src="https://kit.fontawesome.com/0d3af27d96.js" crossorigin="anonymous"></script>
+     <!-- AOS -->
+     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="../static/style.css">
     <title>Fashion Wear </title>
 </head>
@@ -27,55 +31,85 @@
     </nav>
     <section id="home">
         <div class="home">
-            <p>SPRING/SUMMER COLLECTION 2022</p>
+            <p >SPRING/SUMMER COLLECTION 2022</p>
             <h1>Get upto 30% Off </h1>
             <h1>New Arrivals </h1><button>Shop Now </button>
         </div>
     </section>
     <section id="Winter">
-        <h1>Winter wear</h1>
+        <h1 data-aos="fade-up">Winter wear</h1>
+        <div class="line1"></div>
         <div class="Winter">
-            <div class="img"> <img src="./static/winter1.jpg" alt="404 Not found" />
+            <div class="img"> <img src="./static/winter1.jpg" alt="404 Not found" data-aos="fade-down-right"/>
                 <div><a href="/">Men's Clothing</a></div>
             </div>
-            <div class="img"><img src="./static/winter4.jpg" alt="404 Not found" />
+            <div class="img"><img src="./static/winter4.jpg" alt="404 Not found" data-aos="fade-down-right"/>
                 <div><a href="/">Men's Clothing</a></div>
             </div>
-            <div class="img"><img src="./static/winter3.jpg" alt="404 Not found" />
+            <div class="img"><img src="./static/winter3.jpg" alt="404 Not found" data-aos="fade-down-left"/>
                 <div><a href="/">Women's Clothing</a></div>
             </div>
-            <div class="img"> <img src="./static/winter2.jpg" alt="404 Not found" />
+            <div class="img"> <img src="./static/winter2.jpg" alt="404 Not found" data-aos="fade-down-left"/>
                 <div><a href="/">Women's Clothing</a></div>
             </div>
         </div>
     </section>
     <section id="Winter">
-        <h1>Summer wear</h1>
+        <h1 data-aos="fade-up">Summer wear</h1>
+        <div class="line1"></div>
         <div class="Winter">
-            <div class="img"> <img src="./static/winter4.jpg" alt="404 Not found" />
+            <div class="img"> <img src="./static/winter4.jpg" alt="404 Not found" data-aos="fade-down-right"/>
                 <div><a href="/">Men's Clothing</a></div>
             </div>
-            <div class="img"><img src="./static/winter1.jpg" alt="404 Not found" />
+            <div class="img"><img src="./static/winter1.jpg" alt="404 Not found" data-aos="fade-down-right"/>
                 <div><a href="/">Men's Clothing</a></div>
             </div>
-            <div class="img"><img src="./static/winter2.jpg" alt="404 Not found" />
+            <div class="img"><img src="./static/winter2.jpg" alt="404 Not found" data-aos="fade-down-left"/>
                 <div><a href="/">Women's Clothing</a></div>
             </div>
-            <div class="img"> <img src="./static/winter3.jpg" alt="404 Not found" />
+            <div class="img"> <img src="./static/winter3.jpg" alt="404 Not found" data-aos="fade-down-left"/>
                 <div><a href="/">Women's Clothing</a></div>
             </div>
         </div>
     </section>
     <section id="content">
-        <div class="content"><a>Home </a><a>About </a><a>Complains </a><a>Contact Us </a><a>report </a></div>
-        <div class="content"><a>Home </a><a>About </a><a>Complains </a><a>Contact Us </a><a>report </a></div>
-        <div class="content"><a>Home </a><a>About </a><a>Complains </a><a>Contact Us </a><a>report </a></div>
-        <div class="content"><a>Sign In/Register </a><a>My Wishlist </a><a>My Cart </a></div>
+        <div class="foot">
+         <div class="about">
+            <h3>About</h3>
+            <div class="line2"></div>
+        <div class="content"><a>Contact Us </a><a>About Us</a><a>Career </a><a>Press</a><a>Carporate Information </a></div>
+        </div>
+        <div class="help">
+            <h3>Help</h3>
+            <div class="line2"></div>
+        <div class="content"><a>Payment </a><a>Shipping </a><a>Cancellation  </a><a>FAQ</a></div>
+    </div>
+        <div class="contacts">
+            <h3>POLICY</h3>
+            <div class="line2"></div>
+        <div class="content"><a>Return Privacy </a><a>Terms of Use </a><a>Security </a><a>Privacy</a><a>Sitemap </a></div>
+    </div>
+</div>
+    <div class="social">
+    <div>
+        <i class="fa-brands fa-facebook fa-3x"></i>
+        <i class="fa-brands fa-square-twitter fa-3x"></i>
+        <i class="fa-brands fa-square-instagram fa-3x"></i>
+    </div>
+    </div>
     </section>
     <footer id="footer">
         <div>All Copyrights reserved@yuviofficial </div>
     </footer>
     <script src="./ab.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+        offset:300,
+        duration:800
+    }     
+    );
+  </script>
 </body>
 
 </html>
